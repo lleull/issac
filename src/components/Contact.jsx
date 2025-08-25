@@ -136,7 +136,7 @@ export const Contact = () => {
             </h3>
 
             <div className="space-y-6 mb-10">
-              {contactMethods.map((method, index) => (
+              {contactMethods?.map((method, index) => (
                 <ContactMethodCard key={index} method={method} />
               ))}
             </div>
@@ -158,7 +158,7 @@ export const Contact = () => {
                 Available For
               </h4>
               <div className="space-y-3">
-                {collaborationTypes.map((type, index) => (
+                {collaborationTypes?.map((type, index) => (
                   <CollaborationItem key={index} type={type} />
                 ))}
               </div>
